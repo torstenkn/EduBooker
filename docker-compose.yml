@@ -1,0 +1,25 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      - POSTGRES_USER=edubooker
+      - POSTGRES_PASSWORD=U5tp8LE1EwA>
+      - POSTGRES_DB=edubooker
+    ports:
+      - "127.0.0.1:5432:5432"
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    command: python manage.py runserver 0.0.0.0:8000
+    env_file:
+      - .env
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - .:/code
+    links:
+      - db
+    depends_on:
+      - db

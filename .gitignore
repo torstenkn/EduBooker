@@ -1,5 +1,4 @@
-# Ausschließen des Ordners env
-env/
-
-# Ausschließen der Datei .env
+/env/*
+.DS_Store
 .env
+/staticfiles/*
