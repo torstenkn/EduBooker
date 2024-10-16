@@ -1,0 +1,5 @@
+# Ausschließen des Ordners env
+env/
+
+# Ausschließen der Datei .env
+.env
