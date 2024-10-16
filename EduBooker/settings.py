@@ -146,9 +146,8 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
 
-COMPRESS_ROOT = BASE_DIR / 'staticfiles'
-
 COMPRESS_ENABLED = True
+COMPRESS_OFFLINE = True
 
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
@@ -161,6 +160,7 @@ STATICFILES_FINDERS = [
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+COMPRESS_ROOT = STATIC_ROOT
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
