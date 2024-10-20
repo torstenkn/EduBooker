@@ -67,6 +67,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "compressor",
+    "users",
+    "settings",
     "page",
     "inventory",
     "loan",
@@ -176,3 +178,15 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'mediafiles'
+
+AUTH_USER_MODEL = "users.CustomUser"
+
+# Module configuration
+# USE_MODULE_DASHBOARD = True
+# USE_MODULE_DOCUMENTS_PROCEDURES = True
+# USE_MODULE_DOCUMENTS_OTHERS = False
+# USE_MODULE_TRAINING = False
+# USE_MODULE_EVENTS = False
+# USE_MODULE_REPORTS = False
+# USE_MODULE_INTERNALAUDITS = False
+# USE_MODULE_SUPPLIERS = False

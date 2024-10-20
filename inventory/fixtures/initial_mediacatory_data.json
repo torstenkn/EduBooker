@@ -1,0 +1,340 @@
+[
+  {
+    "model": "inventory.mediacategory",
+    "pk": 1,
+    "fields": {
+      "code": "T",
+      "name": "Tiergeschichten",
+      "colour": "grün",
+      "colour_code": "#00FF00",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 2,
+    "fields": {
+      "code": "M",
+      "name": "Märchen",
+      "colour": "rot",
+      "colour_code": "#FF0000",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 3,
+    "fields": {
+      "code": "R",
+      "name": "Romane",
+      "colour": "gelb",
+      "colour_code": "#FFFF00",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 4,
+    "fields": {
+      "code": "K",
+      "name": "Kurzgeschichten",
+      "colour": "grau",
+      "colour_code": "#808080",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 5,
+    "fields": {
+      "code": "D",
+      "name": "Detektive",
+      "colour": "gelb",
+      "colour_code": "#FFFF00",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 6,
+    "fields": {
+      "code": "A",
+      "name": "Abenteuer",
+      "colour": "gelb",
+      "colour_code": "#FFFF00",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 7,
+    "fields": {
+      "code": "BM",
+      "name": "Mädchen",
+      "colour": "blau",
+      "colour_code": "#0000FF",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 8,
+    "fields": {
+      "code": "F",
+      "name": "Familie, Freundschaft",
+      "colour": "rot",
+      "colour_code": "#FF0000",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 9,
+    "fields": {
+      "code": "W",
+      "name": "Witze, Gedichte, Reime",
+      "colour": "grün",
+      "colour_code": "#00FF00",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 10,
+    "fields": {
+      "code": "ST",
+      "name": "Sachbücher Technik",
+      "colour": "weiß",
+      "colour_code": "#FFFFFF",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 11,
+    "fields": {
+      "code": "SG",
+      "name": "Sachbücher Geographie",
+      "colour": "weiß",
+      "colour_code": "#FFFFFF",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 12,
+    "fields": {
+      "code": "SF",
+      "name": "Sachbücher Fußball",
+      "colour": "weiß",
+      "colour_code": "#FFFFFF",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 13,
+    "fields": {
+      "code": "SE",
+      "name": "Sachbücher Essen",
+      "colour": "weiß",
+      "colour_code": "#FFFFFF",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 14,
+    "fields": {
+      "code": "SS",
+      "name": "Sachbücher Spiel, Basteln",
+      "colour": "weiß",
+      "colour_code": "#FFFFFF",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 15,
+    "fields": {
+      "code": "SL",
+      "name": "Sachbücher Lexika",
+      "colour": "weiß",
+      "colour_code": "#FFFFFF",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 16,
+    "fields": {
+      "code": "SN",
+      "name": "Sachbücher Naturwissenschaften Tiere Pflanzen",
+      "colour": "weiß",
+      "colour_code": "#FFFFFF",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 17,
+    "fields": {
+      "code": "SO",
+      "name": "Sachbücher Sonstiges",
+      "colour": "weiß",
+      "colour_code": "#FFFFFF",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 18,
+    "fields": {
+      "code": "E",
+      "name": "1 - 2 Geschichten",
+      "colour": "rot",
+      "colour_code": "#FF0000",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 19,
+    "fields": {
+      "code": "GT",
+      "name": "1 - 2 Sachgeschichten/Tiere",
+      "colour": "gelb",
+      "colour_code": "#FFFF00",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 20,
+    "fields": {
+      "code": "S",
+      "name": "1 - 2 Sachbücher/Lexika",
+      "colour": "gelb",
+      "colour_code": "#FFFF00",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 21,
+    "fields": {
+      "code": "ES",
+      "name": "1 - 2 Spiele",
+      "colour": "gelb",
+      "colour_code": "#FFFF00",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 22,
+    "fields": {
+      "code": "G",
+      "name": "3 Geschichten",
+      "colour": "grün",
+      "colour_code": "#00FF00",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 23,
+    "fields": {
+      "code": "GS",
+      "name": "3 Sachbuch/Tiere",
+      "colour": "blau",
+      "colour_code": "#0000FF",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 24,
+    "fields": {
+      "code": "L",
+      "name": "Englische Titel",
+      "colour": "grau",
+      "colour_code": "#808080",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 25,
+    "fields": {
+      "code": "H",
+      "name": "Hörspiele",
+      "colour": "weiß",
+      "colour_code": "#FFFFFF",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventory.mediacategory",
+    "pk": 26,
+    "fields": {
+      "code": "LTB",
+      "name": "Lustige Taschenbücher",
+      "colour": "weiß",
+      "colour_code": "#FFFFFF",
+      "description": "",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  }
+]

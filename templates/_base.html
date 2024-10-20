@@ -1,31 +1,26 @@
-{% load compress %}
-{% load static %}
-
-<!DOCTYPE html>
+{% load compress %}{% load static %}<!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    {% compress css %}
-    <link rel="stylesheet" href="/static/src/output.css">
-    {% endcompress %}
-
+    {% comment %} <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" /> {% endcomment %}
+    {% compress css %}<link rel="stylesheet" href="{% static 'src/output.css' %}">{% endcompress %}
     {% block head %} {% endblock %}
 </head>
-
 <body class="bg-green-50">
+    <div class="container mx-auto">
+
         {% include "_navigation.html" %}
 
         {% block content %}
         {% endblock content %}
+        
 
         {% include "_footer.html" %}
-    
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
-    {% block scripts %} {% endblock %}
+</div>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+{% block scripts %} {% endblock %}
 </body>
 
 </html>

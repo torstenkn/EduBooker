@@ -1,0 +1,1 @@
+python manage.py loaddata inventory/fixtures/initial_mediacatory_data.json
