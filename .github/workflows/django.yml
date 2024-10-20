@@ -20,21 +20,23 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
+
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        pip install python-dotenv
+
     - name: Set Environment Variables
       env:
-        DJANGO_DEBUG: "True"
-        DJANGO_ALLOWED_HOSTS: "*"
-        DATABASE_URL: "sqlite:///EduBooker.sqlite3"
-        DJANGO_SECRET_KEY: "*2wcrmowp0-#36f3z%q!p$v4*bz2y%(&3plrw(o_8*edw!qe-f"
-        DJANGO_CSRF_COOKIE_DOMAIN: "*"
-        DJANGO_CSRF_TRUSTED_ORIGINS: "*"
-        DJANGO_CORS_ORIGIN_ALLOW_ALL: "True"
+        DJANGO_DEBUG: ${{ secrets.DJANGO_DEBUG }}
+        DJANGO_ALLOWED_HOSTS: ${{ secrets.DJANGO_ALLOWED_HOSTS }}
+        DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
+        DJANGO_CSRF_COOKIE_DOMAIN: ${{ secrets.DJANGO_CSRF_COOKIE_DOMAIN }}
+        DJANGO_CSRF_TRUSTED_ORIGINS: ${{ secrets.DJANGO_CSRF_TRUSTED_ORIGINS }}
+        DJANGO_CORS_ORIGIN_ALLOW_ALL: ${{ secrets.DJANGO_CORS_ORIGIN_ALLOW_ALL }}
       run: echo "Environment variables set"
+
     - name: Run Tests
       run: |
         python manage.py test
