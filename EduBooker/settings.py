@@ -16,13 +16,17 @@ import environ
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-env = environ.Env()
+# Initialize environment variables
+env = environ.Env(
+    DEBUG=(bool, False)
+)
+
+# Reading the .env file (optional)
 environ.Env.read_env()
 
-DEBUG = env.bool("DJANGO_DEBUG", False)
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
+DEBUG = env.bool("DJANGO_DEBUG", default=False)
+SECRET_KEY = env("DJANGO_SECRET_KEY")
 
 if DEBUG:
     ALLOWED_HOSTS = ['*']
@@ -30,10 +34,9 @@ if DEBUG:
     DEFAULT_FROM_EMAIL = 'noreply@edubooker.intern'
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 else:
-    ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS')
+    ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS")
 
 
-SECRET_KEY = env.str('DJANGO_SECRET_KEY')
 DATABASES = {
     "default": env.db("DATABASE_URL")
 }
